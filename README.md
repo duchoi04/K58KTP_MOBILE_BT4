@@ -29,8 +29,6 @@ Cấu hình Tunel cloudflare để truy cập các dịch vụ bằng các tên 
 
 Tạo 3 subdomain:
 
-<img width="871" height="78" alt="image" src="https://github.com/user-attachments/assets/41291894-04af-426a-b042-a2b7e479f46f" />
-
 <img width="1210" height="393" alt="Screenshot 2026-05-22 153811" src="https://github.com/user-attachments/assets/1eafc644-3360-4d5d-8445-dc76403a5c6d" />
 
 
