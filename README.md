@@ -60,34 +60,38 @@ n8n:
 
 Kéo các hình ảnh về và chạy chúng:
 
-hình ảnh
+<img width="907" height="328" alt="Screenshot 2026-05-22 162331" src="https://github.com/user-attachments/assets/276173ad-8b19-4a00-b30e-b744ff361a1e" />
+
 
 Kiểm tra quyền truy cập các tên miền phụ:
 
 Truy cập sub-domain2 để khảo sát xem cơ sở dữ liệu chưa có bảng nào:
 
-hình ảnh
+<img width="1902" height="1067" alt="Screenshot 2026-05-22 163525" src="https://github.com/user-attachments/assets/ef247f4f-f326-4724-aada-5b24c0edee75" />
 
 Truy cập subdomain1 để cài đặt wordpress:
 
-hình ảnh
+<img width="1920" height="1080" alt="Screenshot 2026-05-22 164138" src="https://github.com/user-attachments/assets/db3742bd-6e30-40f3-b3b1-2cb4caaad50b" />
 
 Truy cập sub-domain2 để khảo sát cơ sở dữ liệu có những dữ liệu bảng nào sau khi cài đặt wp:
 
-hình ảnh
+<img width="1764" height="935" alt="Screenshot 2026-05-22 163640" src="https://github.com/user-attachments/assets/0a7cb11e-4366-4f83-8a98-5525df99486a" />
 
 Tạo 1 bài viết trong wordpress giới thiệu về bản thân sinh viên: thông tin cá nhân, sở hữu, ... bài viết có thể chứa hình ảnh, âm thanh, video, ...
+
+<img width="1920" height="1080" alt="Screenshot 2026-05-22 164750" src="https://github.com/user-attachments/assets/f19e4f2f-4636-4ef7-9c20-38c7319b6645" />
 
 
 Tạo 1 bài viết trong wordpress giới thiệu về nhữn kiến ​​thức mà em đã học được ở môn Phát triển ứng dụng với mã nguồn mở
 
-hình ảnh
+<img width="1920" height="1080" alt="Screenshot 2026-05-22 165024" src="https://github.com/user-attachments/assets/f6f7d38a-4873-4aae-af8b-c68923398dc5" />
+
 
 Truy cập subdomain3 để cấu hình n8n:
 
 Tạo tài khoản quản trị viên:
 
-hình ảnh
+<img width="1920" height="1080" alt="Screenshot 2026-05-23 154303" src="https://github.com/user-attachments/assets/f1da0751-dcc0-4d5a-ac36-6377034ffe31" />
 
 Cấu hình n8n:
 
@@ -105,20 +109,20 @@ hình ảnh
 
 Tạo quy trình làm việc mới:
 
-hình ảnh
+<img width="1920" height="1080" alt="Screenshot 2026-05-25 152350" src="https://github.com/user-attachments/assets/6f5140b4-3557-4c79-a351-f8c145a7cc01" />
 
 Thêm nút kích hoạt: nút tìm: Telegram => OnMessage ; cấu hình Thông tin xác thực: Thiết lập Thông tin xác thực => cần nhập Access Token
 
 
 Cần trò chuyện với bot @BotFather trên Telegram để sinh ra bot mới của riêng mình:
 
-hình ảnh
+<img width="1180" height="2556" alt="image" src="https://github.com/user-attachments/assets/8c938303-491b-4156-8b29-cd23018382b1" />
+
 
 Sau khi tạo bot mới để sao chép mã thông báo
 
-hình ảnh
+<img width="1180" height="2556" alt="image" src="https://github.com/user-attachments/assets/14c1d456-d291-48bd-8529-26f0f553e94c" />
 
-hình ảnh
 
 Trò chuyện lần đầu với bot mới này:
 
