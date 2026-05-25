@@ -123,59 +123,92 @@ Sau khi tạo bot mới để sao chép mã thông báo
 
 <img width="1180" height="2556" alt="image" src="https://github.com/user-attachments/assets/14c1d456-d291-48bd-8529-26f0f553e94c" />
 
+<img width="1176" height="993" alt="Screenshot 2026-05-23 163016" src="https://github.com/user-attachments/assets/42d26619-8fbb-4384-8ddd-5f7b155689d6" />
 
 Trò chuyện lần đầu với bot mới này:
 
-hình ảnh
+<img width="1179" height="2556" alt="image" src="https://github.com/user-attachments/assets/55082c0f-09ac-4aa8-9a8a-34830ec0e8a7" />
 
-hình ảnh
+<img width="1920" height="1080" alt="Screenshot 2026-05-23 163142" src="https://github.com/user-attachments/assets/46ddc37c-515b-48f1-bf73-5314b03a995d" />
 
 Thêm nút (nối tiếp vào sau nút Telegram Trigger): AI Google Gemini => Nhắn tin cho mô hình => Thiết lập thông tin xác thực => cần nhập API KEY
 
 
 Lấy API KEY tại trang: https://aistudio.google.com
 
-hình ảnh
+<img width="1180" height="467" alt="Screenshot 2026-05-23 164132" src="https://github.com/user-attachments/assets/0a8c43f2-8280-4ede-8d58-59d286ddfa1a" />
 
 Nhập API Key lên giao diện n8n:
 
-hình ảnh
+<img width="1920" height="1080" alt="Screenshot 2026-05-23 164203" src="https://github.com/user-attachments/assets/00c2a6ef-ea99-4214-98d3-23fbe33c85af" />
 
 
 kéo theo nội dung đã chat với bot của telegram (phía bên trái) vào nội dung phần PROMPT kết quả được {{ $json.message.text }}, cần nhập thêm vào sau {{
 $json.message.text }} để quảng cáo dài hơn : vd ({{ $json.message.text }}. Kết quả sinh ra ở dạng HTML+CSS định dạng để tôi sử dụng HTML+CSS này để tạo
 bài viết cho wordpress.)
 
-hình ảnh
+<img width="1920" height="1080" alt="Screenshot 2026-05-25 154209" src="https://github.com/user-attachments/assets/e87cb11e-54be-4bde-b089-37bc32ebf2f4" />
 
 Bật Nội dung đầu ra dưới dạng JSON : để trả kết quả về dạng json
 
 <img width="891" height="352" alt="image" src="https://github.com/user-attachments/assets/ece83b35-aa0c-47ab-953c-4a2e3026fbc7" />
 
 Add Option to AI write bài thông minh hơn, văn phong nhiều màu hơn thay vì những văn bản chứa nội dung cứng ngắc:
-hình ảnh
+
+<img width="554" height="244" alt="Screenshot 2026-05-23 165016" src="https://github.com/user-attachments/assets/74609607-d457-473d-9924-019ad1986228" />
+
 
 Nút Add (nối tiếp vào sau Message a model): Code in JavaScript
-hình ảnh
+
+<img width="751" height="516" alt="image" src="https://github.com/user-attachments/assets/057ab15b-7444-4604-abe3-53a7be41669e" />
 
 Thêm nút (nối tiếp vào sau nút Code in JavaScript): WordPress => Create a Post
 
-Set up Credential: vào wp tại url: https://sub-domain1/wp-admin => vào mục Tài khoản => chọn người dùng đã tạo lúc setup wordpress => Mật khẩu ứng dụng => Nhập n8n và "Thêm mật khẩu ứng dụng" => sao chép chuỗi 24 ký tự : Đây là mật khẩu ứng dụng => dán vào mục Mật khẩu của n8n Credential
-hình ảnh
-hình ảnh
+Set up Credential: vào wp tại url: https://sub-domain1/wp-admin => vào mục Tài khoản => chọn người dùng đã tạo lúc setup wordpress => Mật khẩu ứng dụng =>
+
+Nhập n8n và "Thêm mật khẩu ứng dụng" => sao chép chuỗi 24 ký tự : Đây là mật khẩu ứng dụng => dán vào mục Mật khẩu của n8n Credential
+
+<img width="1583" height="1070" alt="Screenshot 2026-05-23 170140" src="https://github.com/user-attachments/assets/39b48c24-0bd2-4ef7-8d26-2388e06eb944" />
+
+<img width="1593" height="1072" alt="Screenshot 2026-05-23 170249" src="https://github.com/user-attachments/assets/9933f0b3-f926-4029-b1ae-2bf3807a53bd" />
 
 Quay lại n8n:
-hình ảnh
+
+<img width="1920" height="1080" alt="Screenshot 2026-05-23 170443" src="https://github.com/user-attachments/assets/ab8ef628-0090-43ce-a31b-20f004e5d610" />
 
 Nút cấu hình Tạo một bài đăng: nhấn nút Thực thi các nút trước đó sau đó thực hiện các bước trong ảnh:
-hình ảnh
+
+<img width="1920" height="1080" alt="Screenshot 2026-05-23 171943" src="https://github.com/user-attachments/assets/e9788cb1-384e-4480-9763-d4313e657e52" />
 
 PUBLISH flow (góc trên phải) Nút này thực hiện công việc xuất bản flow <=> flow sẽ tự động thực thi khi đủ điều kiện kích hoạt
-hình ảnh
 
-Kết quả: Em sẽ để video demo kết quả ở link youtube bên dưới file
+<img width="1920" height="1080" alt="Screenshot 2026-05-23 172502" src="https://github.com/user-attachments/assets/d380cd63-baaf-48ef-9e2e-61ecc248ab9d" />
+
+Kết quả: 
+<img width="1179" height="2556" alt="image" src="https://github.com/user-attachments/assets/56f6ae58-0a9f-4975-b7d7-ffc70d191ed2" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-05-23 172247" src="https://github.com/user-attachments/assets/6924c111-96b0-42fc-a611-9850ef02c238" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-05-23 172313" src="https://github.com/user-attachments/assets/9d029a10-2a4c-44ba-ab99-e4fd043a5217" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-05-23 172615" src="https://github.com/user-attachments/assets/a7269b12-bc23-420d-9257-63d14bc7d095" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-05-23 172731" src="https://github.com/user-attachments/assets/8c40ee2b-4ce2-4ed6-8dc7-b4923906a930" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-05-23 172745" src="https://github.com/user-attachments/assets/8d10892e-9aed-4ab1-8240-f0e12000aa4c" />
+
+
 Nhận xét kết quả đạt được:
-Triển khai thành công Stack mở mã nguồn dịch vụ bao gồm MariaDB, phpMyAdmin, WordPress và n8n chạy cài đặt trên môi trường Docker. Kết nối HTTPS qua Cloudflare Tunnel hoạt động ổn định.
-Tự động hóa hoàn chỉnh: Xây dựng thành công luồng dữ liệu kín tự động 24/7: Người dùng tin nhắn (Telegram Bot) ➔ Trí tuệ nhân tạo (Google Gemini AI) xử lý & sinh cấu trúc JSON/HTML ➔ Mã JavaScript giúp dọn dẹp, xử lý chuỗi ➔ Tự động xuất bản bài viết (API WordPress).
 
-Tối ưu hoá và xử lý lỗi: Hệ thống được cấu hình System Message chặt chẽ giúp ép văn bản chuẩn xác hơn, xử lý chuỗi bằng JavaScript giúp hệ thống vận hành mượt mà.
+Triển khai thành công Stack mở mã nguồn dịch vụ bao gồm MariaDB, phpMyAdmin, WordPress và n8n chạy cài đặt trên môi trường Docker. Kết nối HTTPS qua
+
+Cloudflare Tunnel hoạt động ổn định.
+
+Tự động hóa hoàn chỉnh: Xây dựng thành công luồng dữ liệu kín tự động 24/7: Người dùng tin nhắn (Telegram Bot) ➔ Trí tuệ nhân tạo (Google Gemini AI) xử
+
+lý & sinh cấu trúc JSON/HTML ➔ Mã JavaScript giúp dọn dẹp, xử lý chuỗi ➔ Tự động xuất bản bài viết (API WordPress).
+
+
+Tối ưu hoá và xử lý lỗi: Hệ thống được cấu hình System Message chặt chẽ giúp ép văn bản chuẩn xác hơn, xử lý chuỗi bằng JavaScript giúp hệ thống vận hành
+
+mượt mà.
