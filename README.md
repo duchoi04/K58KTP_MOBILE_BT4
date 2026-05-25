@@ -16,20 +16,14 @@ SỬ DỤNG KẾT THÚC QUẢ ĐÀ Ở BÀI TẬP 3, BỔ SUNG VÀO DOCKER COMPO
 
 Cấu hình các tập tin trong dokcer-compose.yml:
 
+Mariadb
 
-Mariadb:
+Quản trị viên PhPA
 
+WordPress
 
 <img width="427" height="684" alt="Screenshot 2026-05-22 152900" src="https://github.com/user-attachments/assets/5cdc6b97-d95d-4c6d-8143-1a9a45280f7b" />
 
-
-Quản trị viên PhPA:
-
-<img width="427" height="684" alt="Screenshot 2026-05-22 152900" src="https://github.com/user-attachments/assets/1fa5040e-6bcd-488c-b17a-dacf4a1a9adf" />
-
-WordPress:
-
-<img width="427" height="684" alt="Screenshot 2026-05-22 152900" src="https://github.com/user-attachments/assets/d45537c4-92e5-41d9-a3db-d60dcc90e2bf" />
 
 Cấu hình Tunel cloudflare để truy cập các dịch vụ bằng các tên miền phụ ( em sử dụng lệnh cli thay vì thao tác đồ họa trên bảng điều khiển của cloudflare):
 
