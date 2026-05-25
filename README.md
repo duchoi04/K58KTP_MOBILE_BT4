@@ -16,11 +16,11 @@ SỬ DỤNG KẾT THÚC QUẢ ĐÀ Ở BÀI TẬP 3, BỔ SUNG VÀO DOCKER COMPO
 
 Cấu hình các tập tin trong dokcer-compose.yml:
 
-Mariadb
+- Mariadb
 
-Quản trị viên PhPA
+- Quản trị viên PhPA
 
-WordPress
+- WordPress
 
 <img width="427" height="684" alt="Screenshot 2026-05-22 152900" src="https://github.com/user-attachments/assets/5cdc6b97-d95d-4c6d-8143-1a9a45280f7b" />
 
@@ -177,17 +177,40 @@ PUBLISH flow (góc trên phải) Nút này thực hiện công việc xuất b�
 <img width="1920" height="1080" alt="Screenshot 2026-05-23 172745" src="https://github.com/user-attachments/assets/8d10892e-9aed-4ab1-8240-f0e12000aa4c" />
 
 
-5. Nhận xét kết quả đạt được:
+5. Nhận xét kết quả đạt được
 
-Triển khai thành công Stack mở mã nguồn dịch vụ bao gồm MariaDB, phpMyAdmin, WordPress và n8n chạy cài đặt trên môi trường Docker. Kết nối HTTPS qua
+   Những gì đã đạt được:
 
-Cloudflare Tunnel hoạt động ổn định.
+- Hạ tầng Docker hoàn thiện — Triển khai thành công 5 dịch vụ trong một file docker-compose.ymlduy nhất: MariaDB, phpMyAdmin, WordPress, Cloudflared và N8N,
+tất cả kết nối với nhau qua mạng nội bộ.
 
-Tự động hóa hoàn chỉnh: Xây dựng thành công luồng dữ liệu kín tự động 24/7: Người dùng tin nhắn (Telegram Bot) ➔ Trí tuệ nhân tạo (Google Gemini AI) xử
+- Cloudflare Tunnel hoạt động ổn định — Cấu hình thành công 3 tên miền phụ công khai ra internet mà không cần mở cổng hoặc cấu hình tường lửa, sử dụng hoàn
+toàn bằng CLI thay vì đồ họa giao diện.
 
-lý & sinh cấu trúc JSON/HTML ➔ Mã JavaScript giúp dọn dẹp, xử lý chuỗi ➔ Tự động xuất bản bài viết (API WordPress).
+- Workflow tự động hóa đầy đủ — Xây dựng 4 nút hoàn chỉnh đường ống:
+
+- Telegram Trigger → Google Gemini AI → Code JavaScript → WordPress
+
+- Chỉ cần gửi 1 tin nhắn Telegram là bài viết chất lượng cao trên WordPress.
+
+- Tích hợp AI tạo nội dung — Use Google Gemini tạo bài viết với văn phong sinh động, có cấu trúc HTML đầy đủ, không cứng như mẫu thông thường.
 
 
-Tối ưu hoá và xử lý lỗi: Hệ thống được cấu hình System Message chặt chẽ giúp ép văn bản chuẩn xác hơn, xử lý chuỗi bằng JavaScript giúp hệ thống vận hành
+Điểm nổi bật:
 
-mượt mà.
+- Xử lý nhiều lỗi thực tế: quyền bị từ chối, sai đường hầm DNS, mã thông báo Cloudflare, thông tin xác thực Telegram
+
+- Bài viết tự động có chất lượng tốt, tiêu đề sáng tạo, nội dung 400-600 từ
+
+- Toàn bộ hệ thống ổn định, có thể sử dụng thực tế
+
+
+Điểm cần cải thiện:
+
+- Node Code JavaScript chưa được xử lý trong trường hợp đầu ra bất ngờ từ Gemini
+
+- Chưa thêm nút Telegram phản hồi người dùng sau khi đăng thành công
+
+- Chưa xử lý được lỗi khi hết thời gian chờ của WordPress hoặc Gemini
+
+
