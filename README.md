@@ -55,7 +55,7 @@ Kéo các hình ảnh về và chạy chúng:
 <img width="907" height="328" alt="Screenshot 2026-05-22 162331" src="https://github.com/user-attachments/assets/276173ad-8b19-4a00-b30e-b744ff361a1e" />
 
 
-Kiểm tra quyền truy cập các tên miền phụ:
+2. Kiểm tra quyền truy cập các tên miền phụ:
 
 Truy cập sub-domain2 để khảo sát xem cơ sở dữ liệu chưa có bảng nào:
 
@@ -85,19 +85,7 @@ Tạo tài khoản quản trị viên:
 
 <img width="1920" height="1080" alt="Screenshot 2026-05-23 154303" src="https://github.com/user-attachments/assets/f1da0751-dcc0-4d5a-ac36-6377034ffe31" />
 
-Cấu hình n8n:
-
-Hãy gửi cho tôi mã bản quyền:
-
-hình ảnh
-
-Kiểm tra email:
-
-hình ảnh
-
-Kích hoạt License key: ( trang chủ -> cài đặt -> cách sử dụng và gói -> nhập key kích hoạt -> điền key vừa nhận từ email vào):
-
-hình ảnh
+3. Cấu hình n8n:
 
 Tạo quy trình làm việc mới:
 
@@ -135,9 +123,8 @@ Nhập API Key lên giao diện n8n:
 <img width="1920" height="1080" alt="Screenshot 2026-05-23 164203" src="https://github.com/user-attachments/assets/00c2a6ef-ea99-4214-98d3-23fbe33c85af" />
 
 
-kéo theo nội dung đã chat với bot của telegram (phía bên trái) vào nội dung phần PROMPT kết quả được {{ $json.message.text }}, cần nhập thêm vào sau {{
-$json.message.text }} để quảng cáo dài hơn : vd ({{ $json.message.text }}. Kết quả sinh ra ở dạng HTML+CSS định dạng để tôi sử dụng HTML+CSS này để tạo
-bài viết cho wordpress.)
+kéo theo nội dung đã chat với bot của telegram (phía bên trái) vào nội dung phần PROMPT kết quả được {{ json.message.text }}, cần nhập thêm vào sau {{
+json.message.text }} để quảng cáo dài hơn :
 
 <img width="1920" height="1080" alt="Screenshot 2026-05-25 154209" src="https://github.com/user-attachments/assets/e87cb11e-54be-4bde-b089-37bc32ebf2f4" />
 
@@ -164,11 +151,11 @@ Nhập n8n và "Thêm mật khẩu ứng dụng" => sao chép chuỗi 24 ký t�
 
 <img width="1593" height="1072" alt="Screenshot 2026-05-23 170249" src="https://github.com/user-attachments/assets/9933f0b3-f926-4029-b1ae-2bf3807a53bd" />
 
-Quay lại n8n:
+Quay lại n8n dán mật khẩu vừa sao chép và bật SSL lên:
 
 <img width="1920" height="1080" alt="Screenshot 2026-05-23 170443" src="https://github.com/user-attachments/assets/ab8ef628-0090-43ce-a31b-20f004e5d610" />
 
-Nút cấu hình Tạo một bài đăng: nhấn nút Thực thi các nút trước đó sau đó thực hiện các bước trong ảnh:
+Nút cấu hình phần Title và content như trong hình:
 
 <img width="1920" height="1080" alt="Screenshot 2026-05-23 171943" src="https://github.com/user-attachments/assets/e9788cb1-384e-4480-9763-d4313e657e52" />
 
@@ -176,7 +163,7 @@ PUBLISH flow (góc trên phải) Nút này thực hiện công việc xuất b�
 
 <img width="1920" height="1080" alt="Screenshot 2026-05-23 172502" src="https://github.com/user-attachments/assets/d380cd63-baaf-48ef-9e2e-61ecc248ab9d" />
 
-Kết quả: 
+4. Kết quả: 
 <img width="1179" height="2556" alt="image" src="https://github.com/user-attachments/assets/56f6ae58-0a9f-4975-b7d7-ffc70d191ed2" />
 
 <img width="1920" height="1080" alt="Screenshot 2026-05-23 172247" src="https://github.com/user-attachments/assets/6924c111-96b0-42fc-a611-9850ef02c238" />
@@ -190,7 +177,7 @@ Kết quả:
 <img width="1920" height="1080" alt="Screenshot 2026-05-23 172745" src="https://github.com/user-attachments/assets/8d10892e-9aed-4ab1-8240-f0e12000aa4c" />
 
 
-Nhận xét kết quả đạt được:
+5. Nhận xét kết quả đạt được:
 
 Triển khai thành công Stack mở mã nguồn dịch vụ bao gồm MariaDB, phpMyAdmin, WordPress và n8n chạy cài đặt trên môi trường Docker. Kết nối HTTPS qua
 
