@@ -1,7 +1,11 @@
 MÔN: Phát triển ứng dụng với mã nguồn mở-TEE0421
+
 Họ và tên: Hoàng Đức Hội
+
 MSSV: K225480106085
+
 Lớp: K58KTP
+
 Bài tập 4:
 
 KHAI THÁC N8N ĐỂ TỰ ĐỘNG ĐĂNG BÀI LÊN WORDPRESS
@@ -12,93 +16,137 @@ SỬ DỤNG KẾT THÚC QUẢ ĐÀ Ở BÀI TẬP 3, BỔ SUNG VÀO DOCKER COMPO
 
 Cấu hình các tập tin trong dokcer-compose.yml:
 
+
 Mariadb:
 
-hình ảnh
+
+<img width="427" height="684" alt="Screenshot 2026-05-22 152900" src="https://github.com/user-attachments/assets/5cdc6b97-d95d-4c6d-8143-1a9a45280f7b" />
+
 
 Quản trị viên PhPA:
 
-hình ảnh
+<img width="427" height="684" alt="Screenshot 2026-05-22 152900" src="https://github.com/user-attachments/assets/1fa5040e-6bcd-488c-b17a-dacf4a1a9adf" />
 
 WordPress:
 
-hình ảnh
+<img width="427" height="684" alt="Screenshot 2026-05-22 152900" src="https://github.com/user-attachments/assets/d45537c4-92e5-41d9-a3db-d60dcc90e2bf" />
 
 Cấu hình Tunel cloudflare để truy cập các dịch vụ bằng các tên miền phụ ( em sử dụng lệnh cli thay vì thao tác đồ họa trên bảng điều khiển của cloudflare):
 
-
 Tạo 3 subdomain:
 
-hình ảnh
+<img width="871" height="78" alt="image" src="https://github.com/user-attachments/assets/41291894-04af-426a-b042-a2b7e479f46f" />
 
-hình ảnh
+<img width="1210" height="393" alt="Screenshot 2026-05-22 153811" src="https://github.com/user-attachments/assets/1eafc644-3360-4d5d-8445-dc76403a5c6d" />
 
 
 Thêm chuỗi id tunel vào config.yml:
 
-hình ảnh
+<img width="932" height="455" alt="Screenshot 2026-05-22 154601" src="https://github.com/user-attachments/assets/1c08a001-cb37-4cd3-a86a-054de02ee027" />
+
+
 Cấu hình dịch vụ cloudflare trong docker-compose.yml:
 
-hình ảnh
+<img width="687" height="290" alt="Screenshot 2026-05-22 155114" src="https://github.com/user-attachments/assets/b7633d9a-521f-468b-9cdd-7918cfed44e0" />
 
 Cấp lại quyền truy cập tệp trên máy chủ:
 
-hình ảnh
+
+<img width="1080" height="236" alt="Screenshot 2026-05-22 155734" src="https://github.com/user-attachments/assets/24b1e3ce-0be4-47f2-9da8-456acb53448c" />
+
 n8n:
-hình ảnh
+
+<img width="812" height="550" alt="Screenshot 2026-05-23 162015" src="https://github.com/user-attachments/assets/ec379116-2ae3-48c5-8498-573589c9dc52" />
 
 Kéo các hình ảnh về và chạy chúng:
+
 hình ảnh
+
 Kiểm tra quyền truy cập các tên miền phụ:
+
 Truy cập sub-domain2 để khảo sát xem cơ sở dữ liệu chưa có bảng nào:
+
 hình ảnh
+
 Truy cập subdomain1 để cài đặt wordpress:
+
 hình ảnh
+
 Truy cập sub-domain2 để khảo sát cơ sở dữ liệu có những dữ liệu bảng nào sau khi cài đặt wp:
+
 hình ảnh
+
 Tạo 1 bài viết trong wordpress giới thiệu về bản thân sinh viên: thông tin cá nhân, sở hữu, ... bài viết có thể chứa hình ảnh, âm thanh, video, ...
-hình ảnh
+
+
 Tạo 1 bài viết trong wordpress giới thiệu về nhữn kiến ​​thức mà em đã học được ở môn Phát triển ứng dụng với mã nguồn mở
+
 hình ảnh
+
 Truy cập subdomain3 để cấu hình n8n:
+
 Tạo tài khoản quản trị viên:
+
 hình ảnh
+
 Cấu hình n8n:
+
 Hãy gửi cho tôi mã bản quyền:
+
 hình ảnh
 
 Kiểm tra email:
+
 hình ảnh
 
 Kích hoạt License key: ( trang chủ -> cài đặt -> cách sử dụng và gói -> nhập key kích hoạt -> điền key vừa nhận từ email vào):
+
 hình ảnh
 
 Tạo quy trình làm việc mới:
+
 hình ảnh
 
 Thêm nút kích hoạt: nút tìm: Telegram => OnMessage ; cấu hình Thông tin xác thực: Thiết lập Thông tin xác thực => cần nhập Access Token
 
+
 Cần trò chuyện với bot @BotFather trên Telegram để sinh ra bot mới của riêng mình:
+
 hình ảnh
+
 Sau khi tạo bot mới để sao chép mã thông báo
+
 hình ảnh
+
 hình ảnh
+
 Trò chuyện lần đầu với bot mới này:
+
 hình ảnh
+
 hình ảnh
+
 Thêm nút (nối tiếp vào sau nút Telegram Trigger): AI Google Gemini => Nhắn tin cho mô hình => Thiết lập thông tin xác thực => cần nhập API KEY
 
+
 Lấy API KEY tại trang: https://aistudio.google.com
+
 hình ảnh
 
 Nhập API Key lên giao diện n8n:
+
 hình ảnh
 
-kéo theo nội dung đã chat với bot của telegram (phía bên trái) vào nội dung phần PROMPT kết quả được {{ $json.message.text }}, cần nhập thêm vào sau {{ $json.message.text }} để quảng cáo dài hơn : vd ({{ $json.message.text }}. Kết quả sinh ra ở dạng HTML+CSS định dạng để tôi sử dụng HTML+CSS này để tạo bài viết cho wordpress.)
+
+kéo theo nội dung đã chat với bot của telegram (phía bên trái) vào nội dung phần PROMPT kết quả được {{ $json.message.text }}, cần nhập thêm vào sau {{
+$json.message.text }} để quảng cáo dài hơn : vd ({{ $json.message.text }}. Kết quả sinh ra ở dạng HTML+CSS định dạng để tôi sử dụng HTML+CSS này để tạo
+bài viết cho wordpress.)
+
 hình ảnh
 
 Bật Nội dung đầu ra dưới dạng JSON : để trả kết quả về dạng json
-hình ảnh
+
+<img width="891" height="352" alt="image" src="https://github.com/user-attachments/assets/ece83b35-aa0c-47ab-953c-4a2e3026fbc7" />
 
 Add Option to AI write bài thông minh hơn, văn phong nhiều màu hơn thay vì những văn bản chứa nội dung cứng ngắc:
 hình ảnh
